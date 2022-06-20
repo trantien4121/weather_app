@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient">
+                
+                <div class="date-container">
+                    <h2 class="date-dayname">Tuesday</h2>
+                    <span class="date-day">15 Jan 2022</span>
+                    <i class="fa-solid fa-location-dot location-icon"></i>
+                    <span class="location">Paris, Fr</span>
+                </div>
+
+                <div class="weather-container">
+                    <!-- <ion-icon class="weather-icon" name="sunny-outline"></ion-icon> -->
+                    <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="weather-icon">
+                    <h1 class="weather-temp">29°C</h1>
+                    <div class="weather-desc">Sunny</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info-side">
+            <div class="today-info">
+                <div class="description">
+                    <span class="title">Description</span>
+                    <span class="description-value">Sunny</span>
+                </div>
+                <div class="humidity">
+                    <span class="title">Humidity</span>
+                    <span class="humidity-value">34 %</span>
+                </div>
+                <div class="wind">
+                    <span class="title">Wind speed</span>
+                    <span class="title-value">0 km/h</span>
+                </div>
+            </div>
+
+            <div class="week-info">
+                <ul class="week-list">
+                    <li class="week-item week-item--active">
+                        <!-- <ion-icon class="day-icon" name="sunny-outline"></ion-icon> -->
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="weather-day-icon day_1">
+                        <span class="day-name day-1">Tue</span>
+                        <span class="day-temp">29°C</span>
+                    </li>
+                    <li class="week-item">
+                        <!-- <ion-icon class="day-icon" name="cloudy-outline"></ion-icon> -->
+                        <img src="https://openweathermap.org/img/wn/02d.png" alt="" class="weather-day-icon day_2">
+                        <span class="day-name day-2">Wed</span>
+                        <span class="day-temp">31°C</span>
+                    </li>
+                    <li class="week-item">
+                        <!-- <ion-icon class="day-icon" name="rainy-outline"></ion-icon> -->
+                        <img src="https://openweathermap.org/img/wn/01d.png" alt="" class="weather-day-icon day_3">
+                        <span class="day-name day-3">Thu</span>
+                        <span class="day-temp">35°C</span>
+                    </li>
+                    <li class="week-item">
+                        <!-- <ion-icon class="day-icon" name="thunderstorm-outline"></ion-icon> -->
+                        <img src="https://openweathermap.org/img/wn/03d.png" alt="" class="weather-day-icon day_4">
+                        <span class="day-name day-4">Fri</span>
+                        <span class="day-temp">25°C</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="location-change">
+                <button class="location-button">
+                    <i class="fa-solid fa-location-dot location-icon"></i>
+                    <span>Change location</span>
+                </button>
+            </div> -->
+
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search your city...">
+                <button class="search-btn">
+                    <ion-icon name="search-outline" class="search-btn-icon"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Use ion-icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--Js-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
